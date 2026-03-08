@@ -13,7 +13,7 @@ export function CardImage({ car, segment }: CardImageProps) {
     return (
       <div className={styles.imageArea} style={{ background: gradient }}>
         <div className={styles.imageGlow} />
-        <img src={car.image} alt={`${car.maker} ${car.name}`} className={styles.carImage} />
+        <img src={car.image} alt={`${car.maker} ${car.name}`} className={styles.carImage} referrerPolicy="no-referrer" />
         <div className={styles.brandLabel}>{car.maker}</div>
       </div>
     );

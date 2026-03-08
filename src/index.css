@@ -34,3 +34,9 @@ input[type='number']::-webkit-inner-spin-button {
 input[type='number'] {
   -moz-appearance: textfield;
 }
+
+@media (max-width: 440px) {
+  :root {
+    --card-width: 100%;
+  }
+}

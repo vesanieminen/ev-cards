@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { FilterState } from '../../types/car';
 import { cars } from '../../data/cars';
 import { segments } from '../../data/segments';
@@ -13,6 +14,8 @@ interface FilterBarProps {
 const allMakers = [...new Set(cars.map((c) => c.maker))].sort();
 
 export function FilterBar({ filters, onChange, resultCount, totalCount }: FilterBarProps) {
+  const [filtersOpen, setFiltersOpen] = useState(false);
+
   const update = (partial: Partial<FilterState>) => {
     onChange({ ...filters, ...partial });
   };
@@ -74,9 +77,15 @@ export function FilterBar({ filters, onChange, resultCount, totalCount }: Filter
             Reset
           </button>
         )}
+        <button
+          className={styles.filterToggle}
+          onClick={() => setFiltersOpen(!filtersOpen)}
+        >
+          {filtersOpen ? 'Hide filters' : 'Filters'}
+        </button>
       </div>
 
-      <div className={styles.filtersRow}>
+      <div className={`${styles.filtersRow} ${filtersOpen ? styles.filtersOpen : ''}`}>
         <div className={styles.filterGroup}>
           <label className={styles.filterLabel}>Maker</label>
           <div className={styles.chipGroup}>

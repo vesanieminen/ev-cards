@@ -10,6 +10,7 @@ export const cars: CarSpec[] = [
     segmentId: 'luxury-sedan',
     quartetId: '1',
     quartetLetter: 'A',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Mercedes-Benz_V297_Classic-Days_2022_DSC_0016.jpg/960px-Mercedes-Benz_V297_Classic-Days_2022_DSC_0016.jpg',
     specs: {
       rangeKm: 770,
       consumptionKwhPer100km: 15.7,
@@ -27,6 +28,7 @@ export const cars: CarSpec[] = [
     segmentId: 'luxury-sedan',
     quartetId: '1',
     quartetLetter: 'B',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/2023_BMW_i5_eDrive_40_M_Sport.jpg/960px-2023_BMW_i5_eDrive_40_M_Sport.jpg',
     specs: {
       rangeKm: 582,
       consumptionKwhPer100km: 16.3,
@@ -44,6 +46,7 @@ export const cars: CarSpec[] = [
     segmentId: 'luxury-sedan',
     quartetId: '1',
     quartetLetter: 'C',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Tesla_Model_S_%28Facelift_ab_04-2016%29_%28cropped%29.jpg/960px-Tesla_Model_S_%28Facelift_ab_04-2016%29_%28cropped%29.jpg',
     specs: {
       rangeKm: 600,
       consumptionKwhPer100km: 17.5,
@@ -61,6 +64,7 @@ export const cars: CarSpec[] = [
     segmentId: 'luxury-sedan',
     quartetId: '1',
     quartetLetter: 'D',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Polestar_4_DSC_8232_%28cropped_2%29.jpg/960px-Polestar_4_DSC_8232_%28cropped_2%29.jpg',
     specs: {
       rangeKm: 590,
       consumptionKwhPer100km: 16.7,
@@ -80,6 +84,7 @@ export const cars: CarSpec[] = [
     segmentId: 'compact-car',
     quartetId: '2',
     quartetLetter: 'A',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/2020_Volkswagen_ID.3_1st_Front.jpg/960px-2020_Volkswagen_ID.3_1st_Front.jpg',
     specs: {
       rangeKm: 557,
       consumptionKwhPer100km: 15.2,
@@ -97,6 +102,7 @@ export const cars: CarSpec[] = [
     segmentId: 'compact-car',
     quartetId: '2',
     quartetLetter: 'B',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/BMW_iX1_1X7A6827.jpg/960px-BMW_iX1_1X7A6827.jpg',
     specs: {
       rangeKm: 440,
       consumptionKwhPer100km: 16.9,
@@ -114,6 +120,7 @@ export const cars: CarSpec[] = [
     segmentId: 'compact-car',
     quartetId: '2',
     quartetLetter: 'C',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Hyundai_Kona_%28SX2%29_IMG_8762_%28cropped%29.jpg/960px-Hyundai_Kona_%28SX2%29_IMG_8762_%28cropped%29.jpg',
     specs: {
       rangeKm: 454,
       consumptionKwhPer100km: 14.7,
@@ -131,6 +138,7 @@ export const cars: CarSpec[] = [
     segmentId: 'compact-car',
     quartetId: '2',
     quartetLetter: 'D',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Kia_Niro_EV_%28SG2%29_1X7A7189.jpg/960px-Kia_Niro_EV_%28SG2%29_1X7A7189.jpg',
     specs: {
       rangeKm: 460,
       consumptionKwhPer100km: 16.2,
@@ -150,6 +158,7 @@ export const cars: CarSpec[] = [
     segmentId: 'suv-crossover',
     quartetId: '3',
     quartetLetter: 'A',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/2025_Volkswagen_ID4_Pro_Redspot_front.jpg/960px-2025_Volkswagen_ID4_Pro_Redspot_front.jpg',
     specs: {
       rangeKm: 520,
       consumptionKwhPer100km: 16.3,
@@ -167,6 +176,7 @@ export const cars: CarSpec[] = [
     segmentId: 'suv-crossover',
     quartetId: '3',
     quartetLetter: 'B',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Hyundai_Ioniq_5_AWD_Techniq-Paket_%E2%80%93_f_31122024.jpg/960px-Hyundai_Ioniq_5_AWD_Techniq-Paket_%E2%80%93_f_31122024.jpg',
     specs: {
       rangeKm: 507,
       consumptionKwhPer100km: 17.0,
@@ -184,6 +194,7 @@ export const cars: CarSpec[] = [
     segmentId: 'suv-crossover',
     quartetId: '3',
     quartetLetter: 'C',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/2021_Kia_EV6_GT-Line_S.jpg/960px-2021_Kia_EV6_GT-Line_S.jpg',
     specs: {
       rangeKm: 506,
       consumptionKwhPer100km: 17.2,
@@ -201,6 +212,7 @@ export const cars: CarSpec[] = [
     segmentId: 'suv-crossover',
     quartetId: '3',
     quartetLetter: 'D',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/2024_Tesla_Model_Y_RWD_front.jpg/960px-2024_Tesla_Model_Y_RWD_front.jpg',
     specs: {
       rangeKm: 533,
       consumptionKwhPer100km: 15.2,
@@ -220,6 +232,7 @@ export const cars: CarSpec[] = [
     segmentId: 'sports-performance',
     quartetId: '4',
     quartetLetter: 'A',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/2020_Porsche_Taycan_4S_79kWh_Front.jpg/960px-2020_Porsche_Taycan_4S_79kWh_Front.jpg',
     specs: {
       rangeKm: 440,
       consumptionKwhPer100km: 23.4,
@@ -237,6 +250,7 @@ export const cars: CarSpec[] = [
     segmentId: 'sports-performance',
     quartetId: '4',
     quartetLetter: 'B',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/2019_Tesla_Model_3_Performance_AWD_Front.jpg/960px-2019_Tesla_Model_3_Performance_AWD_Front.jpg',
     specs: {
       rangeKm: 528,
       consumptionKwhPer100km: 15.6,
@@ -254,6 +268,7 @@ export const cars: CarSpec[] = [
     segmentId: 'sports-performance',
     quartetId: '4',
     quartetLetter: 'C',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Audi_e-tron_GT_IMG_5689.jpg/960px-Audi_e-tron_GT_IMG_5689.jpg',
     specs: {
       rangeKm: 495,
       consumptionKwhPer100km: 22.5,
@@ -271,6 +286,7 @@ export const cars: CarSpec[] = [
     segmentId: 'sports-performance',
     quartetId: '4',
     quartetLetter: 'D',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/BMW_i4_IMG_6695.jpg/960px-BMW_i4_IMG_6695.jpg',
     specs: {
       rangeKm: 521,
       consumptionKwhPer100km: 18.1,
@@ -290,6 +306,7 @@ export const cars: CarSpec[] = [
     segmentId: 'premium-suv',
     quartetId: '5',
     quartetLetter: 'A',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/BMW_iX_IAA_2021_1X7A0204.jpg/960px-BMW_iX_IAA_2021_1X7A0204.jpg',
     specs: {
       rangeKm: 630,
       consumptionKwhPer100km: 19.4,
@@ -307,6 +324,7 @@ export const cars: CarSpec[] = [
     segmentId: 'premium-suv',
     quartetId: '5',
     quartetLetter: 'B',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Mercedes-Benz_X294_IMG_8682.jpg/960px-Mercedes-Benz_X294_IMG_8682.jpg',
     specs: {
       rangeKm: 547,
       consumptionKwhPer100km: 18.7,
@@ -324,6 +342,7 @@ export const cars: CarSpec[] = [
     segmentId: 'premium-suv',
     quartetId: '5',
     quartetLetter: 'C',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/2020_Audi_e-Tron_Sport_50_Quattro.jpg/960px-2020_Audi_e-Tron_Sport_50_Quattro.jpg',
     specs: {
       rangeKm: 582,
       consumptionKwhPer100km: 20.1,
@@ -341,6 +360,7 @@ export const cars: CarSpec[] = [
     segmentId: 'premium-suv',
     quartetId: '5',
     quartetLetter: 'D',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Kia_EV9_1X7A2472.jpg/960px-Kia_EV9_1X7A2472.jpg',
     specs: {
       rangeKm: 505,
       consumptionKwhPer100km: 21.5,
@@ -360,6 +380,7 @@ export const cars: CarSpec[] = [
     segmentId: 'family-wagon',
     quartetId: '6',
     quartetLetter: 'A',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Volkswagen_ID.7_DSC_7879_%28cropped%29.jpg/960px-Volkswagen_ID.7_DSC_7879_%28cropped%29.jpg',
     specs: {
       rangeKm: 700,
       consumptionKwhPer100km: 14.6,
@@ -377,6 +398,7 @@ export const cars: CarSpec[] = [
     segmentId: 'family-wagon',
     quartetId: '6',
     quartetLetter: 'B',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Mercedes-Benz_H243_IMG_5876.jpg/960px-Mercedes-Benz_H243_IMG_5876.jpg',
     specs: {
       rangeKm: 531,
       consumptionKwhPer100km: 16.6,
@@ -394,6 +416,7 @@ export const cars: CarSpec[] = [
     segmentId: 'family-wagon',
     quartetId: '6',
     quartetLetter: 'C',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Volkswagen_ID.5_Leonberg_2022_1X7A0459.jpg/960px-Volkswagen_ID.5_Leonberg_2022_1X7A0459.jpg',
     specs: {
       rangeKm: 549,
       consumptionKwhPer100km: 15.9,
@@ -411,6 +434,7 @@ export const cars: CarSpec[] = [
     segmentId: 'family-wagon',
     quartetId: '6',
     quartetLetter: 'D',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/2023_Hyundai_Ioniq_6_Limited%2C_front_4.27.23.jpg/960px-2023_Hyundai_Ioniq_6_Limited%2C_front_4.27.23.jpg',
     specs: {
       rangeKm: 519,
       consumptionKwhPer100km: 14.3,
@@ -430,6 +454,7 @@ export const cars: CarSpec[] = [
     segmentId: 'budget-ev',
     quartetId: '7',
     quartetLetter: 'A',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/BYD_Atto_3_1X7A6491.jpg/960px-BYD_Atto_3_1X7A6491.jpg',
     specs: {
       rangeKm: 420,
       consumptionKwhPer100km: 16.8,
@@ -447,6 +472,7 @@ export const cars: CarSpec[] = [
     segmentId: 'budget-ev',
     quartetId: '7',
     quartetLetter: 'B',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/MG4_Electric_%E2%80%93_f_21042025.jpg/960px-MG4_Electric_%E2%80%93_f_21042025.jpg',
     specs: {
       rangeKm: 450,
       consumptionKwhPer100km: 15.8,
@@ -464,6 +490,7 @@ export const cars: CarSpec[] = [
     segmentId: 'budget-ev',
     quartetId: '7',
     quartetLetter: 'C',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Polestar_2_%E2%80%93_f_02042021.jpg/960px-Polestar_2_%E2%80%93_f_02042021.jpg',
     specs: {
       rangeKm: 478,
       consumptionKwhPer100km: 15.4,
@@ -481,6 +508,7 @@ export const cars: CarSpec[] = [
     segmentId: 'budget-ev',
     quartetId: '7',
     quartetLetter: 'D',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Mercedes-Benz_X243_300_1X7A0422.jpg/960px-Mercedes-Benz_X243_300_1X7A0422.jpg',
     specs: {
       rangeKm: 474,
       consumptionKwhPer100km: 17.2,
@@ -500,6 +528,7 @@ export const cars: CarSpec[] = [
     segmentId: 'chinese-newcomer',
     quartetId: '8',
     quartetLetter: 'A',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/2022_BYD_Seal.jpg/960px-2022_BYD_Seal.jpg',
     specs: {
       rangeKm: 570,
       consumptionKwhPer100km: 14.0,
@@ -517,6 +546,7 @@ export const cars: CarSpec[] = [
     segmentId: 'chinese-newcomer',
     quartetId: '8',
     quartetLetter: 'B',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/2023_BYD_Han_DM-i_%28facelift%29%2C_front_8.17.23.jpg/960px-2023_BYD_Han_DM-i_%28facelift%29%2C_front_8.17.23.jpg',
     specs: {
       rangeKm: 521,
       consumptionKwhPer100km: 16.1,
@@ -534,6 +564,7 @@ export const cars: CarSpec[] = [
     segmentId: 'chinese-newcomer',
     quartetId: '8',
     quartetLetter: 'C',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/NIO_ET5_IMG_8291.jpg/960px-NIO_ET5_IMG_8291.jpg',
     specs: {
       rangeKm: 560,
       consumptionKwhPer100km: 16.7,
@@ -551,6 +582,7 @@ export const cars: CarSpec[] = [
     segmentId: 'chinese-newcomer',
     quartetId: '8',
     quartetLetter: 'D',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/XPeng_P7_II_MY2025_IMG03.jpg/960px-XPeng_P7_II_MY2025_IMG03.jpg',
     specs: {
       rangeKm: 576,
       consumptionKwhPer100km: 14.2,
