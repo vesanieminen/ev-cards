@@ -1,0 +1,176 @@
+.filterBar {
+  padding: 16px 24px;
+  background: var(--color-card-bg);
+  border-bottom: 1px solid #e2e8f0;
+  position: sticky;
+  top: 60px;
+  z-index: 10;
+}
+
+.searchRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.searchInput {
+  flex: 1;
+  max-width: 400px;
+  padding: 8px 14px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.15s;
+  font-family: inherit;
+}
+
+.searchInput:focus {
+  border-color: #94a3b8;
+}
+
+.resultCount {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  white-space: nowrap;
+}
+
+.resetButton {
+  padding: 6px 14px;
+  font-size: 13px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  background: white;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition: all 0.15s;
+  font-family: inherit;
+}
+
+.resetButton:hover {
+  background: #f8fafc;
+  border-color: #cbd5e1;
+}
+
+.filtersRow {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.filterGroup {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.filterLabel {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  min-width: 70px;
+  padding-top: 6px;
+  flex-shrink: 0;
+}
+
+.chipGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.chip {
+  padding: 4px 12px;
+  font-size: 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  background: white;
+  color: var(--color-text-primary);
+  cursor: pointer;
+  transition: all 0.15s;
+  font-family: inherit;
+}
+
+.chip:hover {
+  background: #f1f5f9;
+  border-color: #cbd5e1;
+}
+
+.chipActive {
+  background: var(--color-text-primary);
+  border-color: var(--color-text-primary);
+  color: white;
+}
+
+.chipActive:hover {
+  opacity: 0.9;
+  background: var(--color-text-primary);
+}
+
+.rangeFilters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.rangeGroup {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.rangeInputs {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.rangeInput {
+  width: 80px;
+  padding: 5px 8px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 13px;
+  outline: none;
+  font-family: inherit;
+}
+
+.rangeInput:focus {
+  border-color: #94a3b8;
+}
+
+.rangeSep {
+  color: var(--color-text-muted);
+  font-size: 13px;
+}
+
+@media (max-width: 768px) {
+  .filterBar {
+    padding: 12px 16px;
+  }
+
+  .searchRow {
+    flex-wrap: wrap;
+  }
+
+  .searchInput {
+    max-width: 100%;
+  }
+
+  .filterGroup {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .filterLabel {
+    padding-top: 0;
+  }
+
+  .rangeFilters {
+    flex-direction: column;
+    gap: 8px;
+  }
+}

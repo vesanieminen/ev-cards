@@ -1,0 +1,49 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px;
+  min-height: calc(100vh - 60px);
+}
+
+.cardWrapper {
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.animating {
+  transform: scale(0.95) rotateY(10deg);
+  opacity: 0.5;
+}
+
+.shuffleButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 32px;
+  padding: 12px 28px;
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  background: var(--color-text-primary);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: opacity 0.15s, transform 0.15s;
+  font-family: inherit;
+}
+
+.shuffleButton:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+}
+
+.shuffleButton:active {
+  transform: scale(0.98);
+}
+
+.hint {
+  margin-top: 16px;
+  font-size: 14px;
+  color: var(--color-text-muted);
+}

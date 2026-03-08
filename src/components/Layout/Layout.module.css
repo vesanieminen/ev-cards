@@ -1,0 +1,120 @@
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 0 24px;
+  height: 60px;
+  background: var(--color-card-bg);
+  border-bottom: 1px solid #e2e8f0;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  margin-right: 8px;
+}
+
+.logoIcon {
+  background: var(--color-text-primary);
+  color: white;
+  font-weight: 800;
+  font-size: 14px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  letter-spacing: -0.5px;
+}
+
+.logoText {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.navLinks {
+  display: flex;
+  gap: 4px;
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.15s;
+}
+
+.navLink:hover {
+  background: #f1f5f9;
+  color: var(--color-text-primary);
+}
+
+.navLinkActive {
+  background: #f1f5f9;
+  color: var(--color-text-primary);
+}
+
+.exportButton {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  color: white;
+  background: var(--color-text-primary);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: opacity 0.15s;
+  font-family: inherit;
+}
+
+.exportButton:hover {
+  opacity: 0.9;
+}
+
+.exportButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.main {
+  flex: 1;
+  background: var(--color-bg);
+}
+
+@media (max-width: 640px) {
+  .nav {
+    padding: 0 16px;
+    gap: 12px;
+  }
+
+  .logoText {
+    display: none;
+  }
+
+  .navLink span {
+    display: none;
+  }
+
+  .exportButton span {
+    display: none;
+  }
+}

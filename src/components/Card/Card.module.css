@@ -1,0 +1,267 @@
+.card {
+  position: relative;
+  display: flex;
+  width: var(--card-width);
+  height: var(--card-height);
+  background: var(--color-card-bg);
+  border-radius: var(--card-radius);
+  box-shadow: var(--card-shadow);
+  overflow: hidden;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  cursor: default;
+}
+
+.card:hover {
+  box-shadow: var(--card-shadow-hover);
+  transform: translateY(-2px);
+}
+
+.card.large {
+  width: 360px;
+  height: auto;
+}
+
+.card.large .imageContainer {
+  height: 140px;
+}
+
+.card.large .carName {
+  font-size: 22px;
+}
+
+.card.large .maker {
+  font-size: 13px;
+}
+
+.card.large .statLabel,
+.card.large .statValue {
+  font-size: 14px;
+}
+
+.card.large .stats {
+  flex: 0;
+  gap: 8px;
+}
+
+.card.large .content {
+  padding: 16px;
+  gap: 4px;
+}
+
+.card.print {
+  width: 85mm;
+  height: 120mm;
+  box-shadow: none;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 10px;
+}
+
+.card.print:hover {
+  box-shadow: none;
+  transform: none;
+}
+
+.card.print .carName {
+  font-size: 13px;
+}
+
+.card.print .maker {
+  font-size: 9px;
+}
+
+.card.print .statLabel {
+  font-size: 9px;
+}
+
+.card.print .statValue {
+  font-size: 10px;
+}
+
+.card.print .statUnit {
+  font-size: 8px;
+}
+
+.card.print .statIcon {
+  width: 14px;
+}
+
+.card.print .quartetBadge {
+  width: 28px;
+  height: 28px;
+  font-size: 11px;
+}
+
+.card.print .segmentLabel {
+  font-size: 8px;
+}
+
+.card.print .imageContainer {
+  height: 80px;
+}
+
+.sidebar {
+  width: 5px;
+  flex-shrink: 0;
+  background-color: var(--segment-color);
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  min-width: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.quartetBadge {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+  font-size: 13px;
+  flex-shrink: 0;
+}
+
+.segmentLabel {
+  flex: 1;
+  font-size: 10px;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+}
+
+.flag {
+  width: 28px;
+  flex-shrink: 0;
+}
+
+.flag :global(.country-flag) {
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.imageContainer {
+  width: 100%;
+  height: 100px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  flex-shrink: 0;
+}
+
+.carImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.imagePlaceholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.carSilhouette {
+  width: 80px;
+  opacity: 0.8;
+}
+
+.placeholderText {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.carInfo {
+  margin-bottom: 10px;
+}
+
+.maker {
+  font-size: 11px;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+  margin-bottom: 1px;
+}
+
+.carName {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.statRow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.statIcon {
+  width: 16px;
+  flex-shrink: 0;
+  color: var(--segment-color);
+  display: flex;
+  align-items: center;
+}
+
+.statLabel {
+  font-size: 11px;
+  color: var(--color-text-secondary);
+  white-space: nowrap;
+}
+
+.statDots {
+  flex: 1;
+  border-bottom: 1px dotted var(--color-text-muted);
+  margin: 0 2px;
+  min-width: 10px;
+  align-self: flex-end;
+  margin-bottom: 3px;
+}
+
+.statValue {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  white-space: nowrap;
+}
+
+.statUnit {
+  font-size: 10px;
+  font-weight: 400;
+  color: var(--color-text-secondary);
+}
