@@ -13,6 +13,7 @@ export interface CarSpec {
     powerKw: number;
     acceleration0to100: number;
     weightKg: number;
+    batteryKwh: number;
   };
 }
 

@@ -16,6 +16,7 @@ export const cars: CarSpec[] = [
       powerKw: 245,
       acceleration0to100: 6.2,
       weightKg: 2480,
+      batteryKwh: 107.8,
     },
   },
   {
@@ -32,6 +33,7 @@ export const cars: CarSpec[] = [
       powerKw: 250,
       acceleration0to100: 6.0,
       weightKg: 2160,
+      batteryKwh: 81.2,
     },
   },
   {
@@ -48,6 +50,7 @@ export const cars: CarSpec[] = [
       powerKw: 493,
       acceleration0to100: 3.2,
       weightKg: 2162,
+      batteryKwh: 100,
     },
   },
   {
@@ -64,6 +67,7 @@ export const cars: CarSpec[] = [
       powerKw: 200,
       acceleration0to100: 6.2,
       weightKg: 2195,
+      batteryKwh: 100,
     },
   },
 
@@ -82,6 +86,7 @@ export const cars: CarSpec[] = [
       powerKw: 150,
       acceleration0to100: 7.9,
       weightKg: 1810,
+      batteryKwh: 77,
     },
   },
   {
@@ -98,6 +103,7 @@ export const cars: CarSpec[] = [
       powerKw: 230,
       acceleration0to100: 5.7,
       weightKg: 2000,
+      batteryKwh: 64.7,
     },
   },
   {
@@ -114,6 +120,7 @@ export const cars: CarSpec[] = [
       powerKw: 150,
       acceleration0to100: 7.8,
       weightKg: 1740,
+      batteryKwh: 65.4,
     },
   },
   {
@@ -130,6 +137,7 @@ export const cars: CarSpec[] = [
       powerKw: 150,
       acceleration0to100: 7.8,
       weightKg: 1775,
+      batteryKwh: 64.8,
     },
   },
 
@@ -148,6 +156,7 @@ export const cars: CarSpec[] = [
       powerKw: 210,
       acceleration0to100: 6.7,
       weightKg: 2124,
+      batteryKwh: 77,
     },
   },
   {
@@ -164,6 +173,7 @@ export const cars: CarSpec[] = [
       powerKw: 239,
       acceleration0to100: 5.2,
       weightKg: 2100,
+      batteryKwh: 77.4,
     },
   },
   {
@@ -180,6 +190,7 @@ export const cars: CarSpec[] = [
       powerKw: 239,
       acceleration0to100: 5.2,
       weightKg: 2090,
+      batteryKwh: 77.4,
     },
   },
   {
@@ -196,6 +207,7 @@ export const cars: CarSpec[] = [
       powerKw: 378,
       acceleration0to100: 5.0,
       weightKg: 1979,
+      batteryKwh: 75,
     },
   },
 
@@ -214,6 +226,7 @@ export const cars: CarSpec[] = [
       powerKw: 560,
       acceleration0to100: 2.8,
       weightKg: 2295,
+      batteryKwh: 93.4,
     },
   },
   {
@@ -230,6 +243,7 @@ export const cars: CarSpec[] = [
       powerKw: 340,
       acceleration0to100: 3.3,
       weightKg: 1830,
+      batteryKwh: 75,
     },
   },
   {
@@ -246,6 +260,7 @@ export const cars: CarSpec[] = [
       powerKw: 475,
       acceleration0to100: 3.3,
       weightKg: 2347,
+      batteryKwh: 93.4,
     },
   },
   {
@@ -262,6 +277,7 @@ export const cars: CarSpec[] = [
       powerKw: 400,
       acceleration0to100: 3.9,
       weightKg: 2215,
+      batteryKwh: 83.9,
     },
   },
 
@@ -280,6 +296,7 @@ export const cars: CarSpec[] = [
       powerKw: 385,
       acceleration0to100: 4.6,
       weightKg: 2510,
+      batteryKwh: 105.2,
     },
   },
   {
@@ -296,6 +313,7 @@ export const cars: CarSpec[] = [
       powerKw: 215,
       acceleration0to100: 6.6,
       weightKg: 2510,
+      batteryKwh: 90.6,
     },
   },
   {
@@ -312,6 +330,7 @@ export const cars: CarSpec[] = [
       powerKw: 300,
       acceleration0to100: 5.6,
       weightKg: 2595,
+      batteryKwh: 106,
     },
   },
   {
@@ -328,6 +347,7 @@ export const cars: CarSpec[] = [
       powerKw: 283,
       acceleration0to100: 6.0,
       weightKg: 2614,
+      batteryKwh: 99.8,
     },
   },
 
@@ -346,6 +366,7 @@ export const cars: CarSpec[] = [
       powerKw: 210,
       acceleration0to100: 6.5,
       weightKg: 2160,
+      batteryKwh: 86,
     },
   },
   {
@@ -362,6 +383,7 @@ export const cars: CarSpec[] = [
       powerKw: 140,
       acceleration0to100: 8.6,
       weightKg: 2015,
+      batteryKwh: 70.5,
     },
   },
   {
@@ -378,6 +400,7 @@ export const cars: CarSpec[] = [
       powerKw: 210,
       acceleration0to100: 6.7,
       weightKg: 2139,
+      batteryKwh: 77,
     },
   },
   {
@@ -394,6 +417,7 @@ export const cars: CarSpec[] = [
       powerKw: 239,
       acceleration0to100: 5.1,
       weightKg: 2010,
+      batteryKwh: 77.4,
     },
   },
 
@@ -412,6 +436,7 @@ export const cars: CarSpec[] = [
       powerKw: 150,
       acceleration0to100: 7.3,
       weightKg: 1750,
+      batteryKwh: 60.5,
     },
   },
   {
@@ -428,6 +453,7 @@ export const cars: CarSpec[] = [
       powerKw: 150,
       acceleration0to100: 7.9,
       weightKg: 1655,
+      batteryKwh: 64,
     },
   },
   {
@@ -444,6 +470,7 @@ export const cars: CarSpec[] = [
       powerKw: 200,
       acceleration0to100: 6.2,
       weightKg: 1885,
+      batteryKwh: 69,
     },
   },
   {
@@ -460,6 +487,7 @@ export const cars: CarSpec[] = [
       powerKw: 140,
       acceleration0to100: 8.9,
       weightKg: 2085,
+      batteryKwh: 70.5,
     },
   },
 
@@ -478,6 +506,7 @@ export const cars: CarSpec[] = [
       powerKw: 230,
       acceleration0to100: 5.9,
       weightKg: 1885,
+      batteryKwh: 82.5,
     },
   },
   {
@@ -494,6 +523,7 @@ export const cars: CarSpec[] = [
       powerKw: 380,
       acceleration0to100: 3.9,
       weightKg: 2150,
+      batteryKwh: 85.4,
     },
   },
   {
@@ -510,6 +540,7 @@ export const cars: CarSpec[] = [
       powerKw: 360,
       acceleration0to100: 4.3,
       weightKg: 2140,
+      batteryKwh: 100,
     },
   },
   {
@@ -526,6 +557,7 @@ export const cars: CarSpec[] = [
       powerKw: 196,
       acceleration0to100: 6.7,
       weightKg: 1880,
+      batteryKwh: 86.5,
     },
   },
 ];

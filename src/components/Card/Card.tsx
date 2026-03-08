@@ -69,6 +69,12 @@ export function Card({ car, segment, size = 'normal', onClick }: CardProps) {
           value={formatNumber(car.specs.weightKg)}
           unit="kg"
         />
+        <StatRow
+          icon="🔌"
+          label="Battery"
+          value={car.specs.batteryKwh}
+          unit="kWh"
+        />
       </div>
     </div>
   );
