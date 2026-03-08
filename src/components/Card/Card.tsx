@@ -22,7 +22,7 @@ export function Card({ car, segment, size = 'normal', onClick }: CardProps) {
       onClick={onClick}
     >
       <div className={styles.header} style={{ background: `linear-gradient(135deg, ${segment.gradientStart}, ${segment.gradientEnd})` }}>
-        <div className={styles.quartetBadge}>{quartetLabel}</div>
+        <div className={styles.quartetBadge} style={{ color: segment.gradientStart }}>{quartetLabel}</div>
         <span className={styles.segmentLabel}>{segment.name}</span>
         <div className={styles.flag}>
           <CountryFlag countryCode={car.countryCode} />
