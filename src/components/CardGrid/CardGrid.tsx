@@ -5,9 +5,10 @@ import styles from './CardGrid.module.css';
 
 interface CardGridProps {
   cars: CarSpec[];
+  onCardClick?: (car: CarSpec) => void;
 }
 
-export function CardGrid({ cars }: CardGridProps) {
+export function CardGrid({ cars, onCardClick }: CardGridProps) {
   if (cars.length === 0) {
     return (
       <div className={styles.empty}>
@@ -19,7 +20,12 @@ export function CardGrid({ cars }: CardGridProps) {
   return (
     <div className={styles.grid}>
       {cars.map((car) => (
-        <Card key={car.id} car={car} segment={getSegment(car.segmentId)} />
+        <Card
+          key={car.id}
+          car={car}
+          segment={getSegment(car.segmentId)}
+          onClick={() => onCardClick?.(car)}
+        />
       ))}
     </div>
   );

@@ -1,0 +1,53 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.3s ease;
+}
+
+.overlay.active {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.cardWrapper {
+  transform: scale(0.85);
+  opacity: 0;
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.overlay.active .cardWrapper {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.closeButton {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s;
+  opacity: 0;
+}
+
+.overlay.active .closeButton {
+  opacity: 1;
+  transition: background 0.15s, opacity 0.3s ease-out 0.1s;
+}
+
+.closeButton:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
