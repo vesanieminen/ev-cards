@@ -1,5 +1,5 @@
 import { CarSpec, Segment } from '../../types/car';
-import { formatNumber, formatConsumption, formatAcceleration } from '../../utils/formatters';
+import { formatNumber, formatAcceleration } from '../../utils/formatters';
 import { CardImage } from './CardImage';
 import { StatRow } from './StatRow';
 import { CountryFlag } from './CountryFlag';
@@ -52,6 +52,12 @@ export function Card({ car, segment, size = 'normal', onClick }: CardProps) {
           unit="Wh/km"
         />
         <StatRow
+          icon="🔌"
+          label="Battery"
+          value={car.specs.batteryKwh}
+          unit="kWh"
+        />
+        <StatRow
           icon="🔋"
           label="Power"
           value={formatNumber(car.specs.powerKw)}
@@ -68,12 +74,6 @@ export function Card({ car, segment, size = 'normal', onClick }: CardProps) {
           label="Weight"
           value={formatNumber(car.specs.weightKg)}
           unit="kg"
-        />
-        <StatRow
-          icon="🔌"
-          label="Battery"
-          value={car.specs.batteryKwh}
-          unit="kWh"
         />
       </div>
     </div>
