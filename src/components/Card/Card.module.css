@@ -132,13 +132,7 @@
 .header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 14px 20px;
-}
-
-.headerLeft {
-  display: flex;
-  align-items: center;
+  padding: 10px 16px;
   gap: 10px;
 }
 
@@ -146,7 +140,7 @@
   width: 36px;
   height: 36px;
   border-radius: 10px;
-  background: #1a2332;
+  background: rgba(255, 255, 255, 0.2);
   color: #fff;
   display: flex;
   align-items: center;
@@ -158,15 +152,17 @@
 }
 
 .segmentLabel {
-  font-size: 12px;
+  flex: 1;
+  font-size: 13px;
   font-weight: 600;
-  color: #8a919c;
+  color: rgba(255, 255, 255, 0.9);
   letter-spacing: 1.2px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .flag {
-  width: 28px;
+  width: 26px;
   flex-shrink: 0;
 }
 

@@ -21,11 +21,9 @@ export function Card({ car, segment, size = 'normal', onClick }: CardProps) {
       className={`${styles.card} ${styles[size]}`}
       onClick={onClick}
     >
-      <div className={styles.header}>
-        <div className={styles.headerLeft}>
-          <div className={styles.quartetBadge} style={{ background: segment.color }}>{quartetLabel}</div>
-          <span className={styles.segmentLabel}>{segment.name}</span>
-        </div>
+      <div className={styles.header} style={{ background: `linear-gradient(135deg, ${segment.gradientStart}, ${segment.gradientEnd})` }}>
+        <div className={styles.quartetBadge}>{quartetLabel}</div>
+        <span className={styles.segmentLabel}>{segment.name}</span>
         <div className={styles.flag}>
           <CountryFlag countryCode={car.countryCode} />
         </div>
