@@ -1,50 +1,59 @@
-# React + TypeScript + Vite
+# EV Cards
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A web application for browsing and printing EV (Electric Vehicle) quartets playing cards. Features 32 real EV models organized into 8 quartets by segment.
 
-Currently, two official plugins are available:
+![EV Cards Screenshot](docs/screenshot.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Getting Started
 
-## Expanding the ESLint configuration
+### Prerequisites
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- [Node.js](https://nodejs.org/) (v18 or later)
 
-- Configure the top-level `parserOptions` property like this:
+### Installation
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```bash
+npm install
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Development
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+npm run dev
 ```
+
+Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+### Production Build
+
+```bash
+npm run build
+npm run preview
+```
+
+## Features
+
+- **32 EV cards** in 8 quartets: Luxury Sedans, Compact Cars, SUVs/Crossovers, Sports/Performance, Premium SUVs, Family & Wagons, Budget EVs, Chinese Newcomers
+- **Filtering** by maker, segment, range, acceleration, and weight
+- **Random card** page with shuffle
+- **PDF export** to A4 layout for printing and cutting out physical cards
+- **Card specs**: Range (km), Consumption (Wh/km), Power (kW), 0-100 km/h (s), Weight (kg)
+- Country flags showing maker origin
+
+## Adding Car Images
+
+Replace the gradient placeholders with real images by:
+
+1. Add image files to `public/images/cars/`
+2. Set the `image` field in `src/data/cars.ts` for each car, e.g.:
+   ```ts
+   image: '/images/cars/tesla-model-3.jpg'
+   ```
+
+## Tech Stack
+
+- React + TypeScript
+- Vite
+- React Router
+- jsPDF + html2canvas (PDF export)
+- country-flag-icons (SVG flags)
