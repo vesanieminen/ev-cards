@@ -8,19 +8,15 @@ import styles from './Card.module.css';
 interface CardProps {
   car: CarSpec;
   segment: Segment;
-  size?: 'normal' | 'large' | 'print';
-  onClick?: () => void;
+  size?: 'normal' | 'print';
 }
 
-export function Card({ car, segment, size = 'normal', onClick }: CardProps) {
+export function Card({ car, segment, size = 'normal' }: CardProps) {
   const quartetLabel = `${car.quartetId}${car.quartetLetter}`;
   const consumptionWhKm = Math.round(car.specs.consumptionKwhPer100km * 10);
 
   return (
-    <div
-      className={`${styles.card} ${styles[size]}`}
-      onClick={onClick}
-    >
+    <div className={`${styles.card} ${styles[size]}`}>
       <div className={styles.header} style={{ background: `linear-gradient(135deg, ${segment.gradientStart}, ${segment.gradientEnd})` }}>
         <div className={styles.quartetBadge} style={{ color: segment.gradientStart }}>{quartetLabel}</div>
         <span className={styles.segmentLabel}>{segment.name}</span>

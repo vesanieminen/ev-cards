@@ -6,7 +6,6 @@
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.04);
   overflow: hidden;
   transition: box-shadow 0.2s ease, transform 0.2s ease;
-  cursor: pointer;
 }
 
 .card:hover {
@@ -15,34 +14,6 @@
 }
 
 /* ─── Size variants ─── */
-.card.large {
-  width: 420px;
-}
-
-.card.large .imageArea {
-  min-height: 240px;
-}
-
-.card.large .silhouette {
-  width: 280px;
-}
-
-.card.large .carName {
-  font-size: 24px;
-}
-
-.card.large .statLabel {
-  font-size: 15px;
-}
-
-.card.large .statValue {
-  font-size: 20px;
-}
-
-.card.large .statUnit {
-  font-size: 13px;
-}
-
 .card.print {
   width: 92mm;
   border-radius: 12px;
