@@ -75,8 +75,12 @@
 }
 
 .card.print .bottomSection {
-  border-radius: 0 0 12px 12px;
-  border-width: 2px;
+  padding: 0 10px 10px;
+}
+
+.card.print .bottomInner {
+  border-radius: 8px;
+  border-width: 1.5px;
 }
 
 .card.print .imageArea {
@@ -229,10 +233,13 @@
 
 /* ─── Bottom section with segment border ─── */
 .bottomSection {
-  border-left: 3px solid;
-  border-right: 3px solid;
-  border-bottom: 3px solid;
-  border-radius: 0 0 20px 20px;
+  padding: 0 14px 14px;
+}
+
+.bottomInner {
+  background: var(--color-card-bg);
+  border-radius: 12px;
+  border: 2px solid #1a2332;
 }
 
 /* ─── Title section ─── */
