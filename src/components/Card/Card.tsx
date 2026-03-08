@@ -31,12 +31,13 @@ export function Card({ car, segment, size = 'normal', onClick }: CardProps) {
 
       <CardImage car={car} segment={segment} />
 
-      <div className={styles.titleSection}>
-        <div className={styles.maker}>{car.maker}</div>
-        <div className={styles.carName}>{car.name}</div>
-      </div>
+      <div className={styles.bottomSection} style={{ borderColor: segment.gradientStart }}>
+        <div className={styles.titleSection}>
+          <div className={styles.maker}>{car.maker}</div>
+          <div className={styles.carName}>{car.name}</div>
+        </div>
 
-      <div className={styles.stats}>
+        <div className={styles.stats}>
         <StatRow
           icon="⚡"
           label="Range"
@@ -73,6 +74,7 @@ export function Card({ car, segment, size = 'normal', onClick }: CardProps) {
           value={formatNumber(car.specs.weightKg)}
           unit="kg"
         />
+      </div>
       </div>
     </div>
   );

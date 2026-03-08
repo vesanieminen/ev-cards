@@ -71,7 +71,12 @@
 }
 
 .card.print .flag {
-  width: 24px;
+  width: 30px;
+}
+
+.card.print .bottomSection {
+  border-radius: 0 0 12px 12px;
+  border-width: 2px;
 }
 
 .card.print .imageArea {
@@ -93,7 +98,7 @@
 }
 
 .card.print .maker {
-  font-size: 9px;
+  font-size: 11px;
 }
 
 .card.print .carName {
@@ -162,7 +167,7 @@
 }
 
 .flag {
-  width: 26px;
+  width: 36px;
   flex-shrink: 0;
 }
 
@@ -222,13 +227,21 @@
   z-index: 1;
 }
 
+/* ─── Bottom section with segment border ─── */
+.bottomSection {
+  border-left: 3px solid;
+  border-right: 3px solid;
+  border-bottom: 3px solid;
+  border-radius: 0 0 20px 20px;
+}
+
 /* ─── Title section ─── */
 .titleSection {
   padding: 20px 24px 8px;
 }
 
 .maker {
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 600;
   letter-spacing: 1.5px;
   color: #8a919c;
