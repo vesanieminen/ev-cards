@@ -102,7 +102,7 @@ export const cars: CarSpec[] = [
     segmentId: 'compact-car',
     quartetId: '2',
     quartetLetter: 'B',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/BMW_iX1_1X7A6827.jpg/960px-BMW_iX1_1X7A6827.jpg',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/BMW_iX1_xDrive30_xLINE_%28U11%29_front.jpg/960px-BMW_iX1_xDrive30_xLINE_%28U11%29_front.jpg',
     specs: {
       rangeKm: 440,
       consumptionKwhPer100km: 16.9,
@@ -138,7 +138,7 @@ export const cars: CarSpec[] = [
     segmentId: 'compact-car',
     quartetId: '2',
     quartetLetter: 'D',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Kia_Niro_EV_%28SG2%29_1X7A7189.jpg/960px-Kia_Niro_EV_%28SG2%29_1X7A7189.jpg',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/0_Kia_Niro_EV_%28SG2%29_1.jpg/960px-0_Kia_Niro_EV_%28SG2%29_1.jpg',
     specs: {
       rangeKm: 460,
       consumptionKwhPer100km: 16.2,
