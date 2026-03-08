@@ -36,13 +36,13 @@ export function Card({ car, segment, size = 'normal' }: CardProps) {
 
           <div className={styles.stats}>
             <StatRow
-              icon="⚡"
+              icon="🛣️"
               label="Range"
               value={formatNumber(car.specs.rangeKm)}
               unit="km"
             />
             <StatRow
-              icon="⚙"
+              icon="⚡"
               label="Consumption"
               value={formatNumber(consumptionWhKm)}
               unit="Wh/km"
@@ -66,7 +66,7 @@ export function Card({ car, segment, size = 'normal' }: CardProps) {
               unit="s"
             />
             <StatRow
-              icon="⚖"
+              icon="⚖️"
               label="Weight"
               value={formatNumber(car.specs.weightKg)}
               unit="kg"
