@@ -1,60 +1,54 @@
+/* ─── Card shell ─── */
 .card {
-  position: relative;
-  display: flex;
   width: var(--card-width);
-  height: var(--card-height);
+  border-radius: 20px;
   background: var(--color-card-bg);
-  border-radius: var(--card-radius);
-  box-shadow: var(--card-shadow);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.04);
   overflow: hidden;
   transition: box-shadow 0.2s ease, transform 0.2s ease;
   cursor: default;
 }
 
 .card:hover {
-  box-shadow: var(--card-shadow-hover);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12), 0 2px 6px rgba(0, 0, 0, 0.06);
   transform: translateY(-2px);
 }
 
+/* ─── Size variants ─── */
 .card.large {
-  width: 360px;
-  height: auto;
+  width: 420px;
 }
 
-.card.large .imageContainer {
-  height: 140px;
+.card.large .imageArea {
+  min-height: 240px;
+  padding: 44px 28px 36px;
+}
+
+.card.large .silhouette {
+  width: 280px;
 }
 
 .card.large .carName {
-  font-size: 22px;
+  font-size: 24px;
 }
 
-.card.large .maker {
-  font-size: 13px;
+.card.large .statLabel {
+  font-size: 15px;
 }
 
-.card.large .statLabel,
 .card.large .statValue {
-  font-size: 14px;
+  font-size: 20px;
 }
 
-.card.large .stats {
-  flex: 0;
-  gap: 8px;
-}
-
-.card.large .content {
-  padding: 16px;
-  gap: 4px;
+.card.large .statUnit {
+  font-size: 13px;
 }
 
 .card.print {
   width: 85mm;
-  height: 120mm;
+  border-radius: 12px;
   box-shadow: none;
   border: 1px solid #e2e8f0;
-  border-radius: 8px;
-  font-size: 10px;
 }
 
 .card.print:hover {
@@ -62,85 +56,115 @@
   transform: none;
 }
 
-.card.print .carName {
-  font-size: 13px;
-}
-
-.card.print .maker {
-  font-size: 9px;
-}
-
-.card.print .statLabel {
-  font-size: 9px;
-}
-
-.card.print .statValue {
-  font-size: 10px;
-}
-
-.card.print .statUnit {
-  font-size: 8px;
-}
-
-.card.print .statIcon {
-  width: 14px;
+.card.print .header {
+  padding: 8px 12px;
 }
 
 .card.print .quartetBadge {
-  width: 28px;
-  height: 28px;
-  font-size: 11px;
+  width: 26px;
+  height: 26px;
+  border-radius: 7px;
+  font-size: 10px;
 }
 
 .card.print .segmentLabel {
   font-size: 8px;
 }
 
-.card.print .imageContainer {
-  height: 80px;
+.card.print .flag {
+  width: 22px;
 }
 
-.sidebar {
-  width: 5px;
-  flex-shrink: 0;
-  background-color: var(--segment-color);
+.card.print .imageArea {
+  min-height: 100px;
+  padding: 16px 12px 14px;
 }
 
-.content {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  padding: 12px;
-  min-width: 0;
+.card.print .silhouette {
+  width: 140px;
 }
 
+.card.print .brandLabel {
+  font-size: 8px;
+  letter-spacing: 2px;
+  margin-top: 10px;
+}
+
+.card.print .titleSection {
+  padding: 10px 12px 4px;
+}
+
+.card.print .maker {
+  font-size: 8px;
+}
+
+.card.print .carName {
+  font-size: 13px;
+}
+
+.card.print .stats {
+  padding: 6px 12px 12px;
+}
+
+.card.print .statRow {
+  padding: 6px 0;
+}
+
+.card.print .statIcon {
+  width: 22px;
+  font-size: 14px;
+}
+
+.card.print .statLabel {
+  font-size: 10px;
+}
+
+.card.print .statValue {
+  font-size: 12px;
+  min-width: 40px;
+}
+
+.card.print .statUnit {
+  font-size: 9px;
+  min-width: 40px;
+  padding-left: 3px;
+}
+
+/* ─── Header bar ─── */
 .header {
   display: flex;
   align-items: center;
-  gap: 8px;
-  margin-bottom: 8px;
+  justify-content: space-between;
+  padding: 14px 20px;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .quartetBadge {
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: #1a2332;
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
-  font-weight: 700;
   font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
   flex-shrink: 0;
 }
 
 .segmentLabel {
-  flex: 1;
-  font-size: 10px;
-  color: var(--color-text-muted);
+  font-size: 12px;
+  font-weight: 600;
+  color: #8a919c;
+  letter-spacing: 1.2px;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
-  font-weight: 500;
 }
 
 .flag {
@@ -152,116 +176,131 @@
   width: 100%;
   height: auto;
   border-radius: 2px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-.imageContainer {
-  width: 100%;
-  height: 100px;
-  border-radius: 8px;
-  overflow: hidden;
-  margin-bottom: 10px;
-  flex-shrink: 0;
-}
-
-.carImage {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.imagePlaceholder {
-  width: 100%;
-  height: 100%;
+/* ─── Image area ─── */
+.imageArea {
+  padding: 40px 24px 32px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 4px;
+  min-height: 200px;
+  position: relative;
+  overflow: hidden;
 }
 
-.carSilhouette {
-  width: 80px;
-  opacity: 0.8;
+.imageGlow {
+  position: absolute;
+  width: 300px;
+  height: 120px;
+  border-radius: 50%;
+  background: radial-gradient(ellipse, rgba(100, 160, 255, 0.08) 0%, transparent 70%);
+  bottom: 40px;
 }
 
-.placeholderText {
-  color: rgba(255, 255, 255, 0.5);
+.silhouette {
+  width: 240px;
+  position: relative;
+  z-index: 1;
+}
+
+.brandLabel {
+  margin-top: 20px;
   font-size: 11px;
   font-weight: 600;
+  letter-spacing: 4px;
+  color: rgba(255, 255, 255, 0.4);
   text-transform: uppercase;
-  letter-spacing: 1px;
+  position: relative;
+  z-index: 1;
 }
 
-.carInfo {
-  margin-bottom: 10px;
+.carImage {
+  width: 80%;
+  max-height: 140px;
+  object-fit: contain;
+  position: relative;
+  z-index: 1;
+}
+
+/* ─── Title section ─── */
+.titleSection {
+  padding: 20px 24px 8px;
 }
 
 .maker {
   font-size: 11px;
-  color: var(--color-text-secondary);
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: #8a919c;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 500;
-  margin-bottom: 1px;
+  margin-bottom: 4px;
 }
 
 .carName {
-  font-size: 17px;
+  font-size: 22px;
   font-weight: 700;
-  color: var(--color-text-primary);
+  color: #1a2332;
   line-height: 1.2;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
+/* ─── Stats section ─── */
 .stats {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  flex: 1;
-  justify-content: flex-end;
+  padding: 12px 24px 24px;
 }
 
 .statRow {
   display: flex;
   align-items: center;
-  gap: 6px;
+  justify-content: space-between;
+  padding: 11px 0;
+}
+
+.statRow:not(:last-child) {
+  border-bottom: 1px solid #f0f2f5;
+}
+
+.statLeft {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .statIcon {
-  width: 16px;
+  width: 34px;
+  text-align: center;
+  font-size: 22px;
+  opacity: 0.45;
   flex-shrink: 0;
-  color: var(--segment-color);
-  display: flex;
-  align-items: center;
+  line-height: 1;
 }
 
 .statLabel {
-  font-size: 11px;
-  color: var(--color-text-secondary);
-  white-space: nowrap;
+  font-size: 14px;
+  color: #5a6270;
+  font-weight: 500;
 }
 
-.statDots {
-  flex: 1;
-  border-bottom: 1px dotted var(--color-text-muted);
-  margin: 0 2px;
-  min-width: 10px;
-  align-self: flex-end;
-  margin-bottom: 3px;
+.statValueGroup {
+  display: flex;
+  align-items: baseline;
 }
 
 .statValue {
-  font-size: 13px;
-  font-weight: 600;
-  color: var(--color-text-primary);
-  white-space: nowrap;
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a2332;
+  min-width: 58px;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
 }
 
 .statUnit {
-  font-size: 10px;
-  font-weight: 400;
-  color: var(--color-text-secondary);
+  font-size: 12px;
+  color: #8a919c;
+  font-weight: 500;
+  min-width: 52px;
+  text-align: left;
+  padding-left: 6px;
 }
