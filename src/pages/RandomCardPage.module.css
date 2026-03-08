@@ -9,6 +9,8 @@
 
 .cardWrapper {
   transition: transform 0.2s ease, opacity 0.2s ease;
+  max-width: 420px;
+  width: 100%;
 }
 
 .animating {

@@ -14,7 +14,6 @@ export function CardImage({ car, segment }: CardImageProps) {
       <div className={styles.imageArea} style={{ background: gradient }}>
         <div className={styles.imageGlow} />
         <img src={car.image} alt={`${car.maker} ${car.name}`} className={styles.carImage} referrerPolicy="no-referrer" />
-        <div className={styles.brandLabel}>{car.maker}</div>
       </div>
     );
   }
@@ -43,7 +42,6 @@ export function CardImage({ car, segment }: CardImageProps) {
         <rect x="35" y="56" width="18" height="6" rx="2" fill="rgba(255,200,100,0.2)" stroke="rgba(255,200,100,0.3)" strokeWidth="0.5" />
         <rect x="207" y="56" width="18" height="6" rx="2" fill="rgba(255,80,80,0.2)" stroke="rgba(255,80,80,0.3)" strokeWidth="0.5" />
       </svg>
-      <div className={styles.brandLabel}>{car.maker}</div>
     </div>
   );
 }

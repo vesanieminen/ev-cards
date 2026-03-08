@@ -34,7 +34,7 @@ export function RandomCardPage() {
   return (
     <div className={styles.page}>
       <div className={`${styles.cardWrapper} ${animating ? styles.animating : ''}`}>
-        <Card car={car} segment={getSegment(car.segmentId)} size="large" />
+        <Card car={car} segment={getSegment(car.segmentId)} />
       </div>
       <button className={styles.shuffleButton} onClick={handleShuffle}>
         <Shuffle size={18} />

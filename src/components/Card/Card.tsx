@@ -23,7 +23,7 @@ export function Card({ car, segment, size = 'normal', onClick }: CardProps) {
     >
       <div className={styles.header}>
         <div className={styles.headerLeft}>
-          <div className={styles.quartetBadge}>{quartetLabel}</div>
+          <div className={styles.quartetBadge} style={{ background: segment.color }}>{quartetLabel}</div>
           <span className={styles.segmentLabel}>{segment.name}</span>
         </div>
         <div className={styles.flag}>
