@@ -57,77 +57,77 @@
 }
 
 .card.print .header {
-  padding: 8px 12px;
+  padding: 10px 14px;
 }
 
 .card.print .quartetBadge {
-  width: 26px;
-  height: 26px;
-  border-radius: 7px;
-  font-size: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  font-size: 11px;
 }
 
 .card.print .segmentLabel {
-  font-size: 8px;
+  font-size: 9px;
 }
 
 .card.print .flag {
-  width: 22px;
+  width: 24px;
 }
 
 .card.print .imageArea {
-  min-height: 130px;
-  padding: 20px 16px 16px;
+  min-height: 150px;
+  padding: 22px 16px 18px;
 }
 
 .card.print .silhouette {
-  width: 160px;
+  width: 180px;
 }
 
 .card.print .brandLabel {
-  font-size: 8px;
-  letter-spacing: 2px;
-  margin-top: 10px;
+  font-size: 9px;
+  letter-spacing: 2.5px;
+  margin-top: 12px;
 }
 
 .card.print .titleSection {
-  padding: 10px 12px 4px;
+  padding: 12px 14px 6px;
 }
 
 .card.print .maker {
-  font-size: 8px;
+  font-size: 9px;
 }
 
 .card.print .carName {
-  font-size: 13px;
+  font-size: 16px;
 }
 
 .card.print .stats {
-  padding: 6px 12px 12px;
+  padding: 8px 14px 14px;
 }
 
 .card.print .statRow {
-  padding: 6px 0;
+  padding: 7px 0;
 }
 
 .card.print .statIcon {
-  width: 22px;
-  font-size: 14px;
+  width: 24px;
+  font-size: 16px;
 }
 
 .card.print .statLabel {
-  font-size: 10px;
+  font-size: 11px;
 }
 
 .card.print .statValue {
-  font-size: 12px;
-  min-width: 40px;
+  font-size: 14px;
+  min-width: 44px;
 }
 
 .card.print .statUnit {
-  font-size: 9px;
-  min-width: 40px;
-  padding-left: 3px;
+  font-size: 10px;
+  min-width: 42px;
+  padding-left: 4px;
 }
 
 /* ─── Header bar ─── */
