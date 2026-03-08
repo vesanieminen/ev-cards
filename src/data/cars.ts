@@ -206,7 +206,7 @@ export const cars: CarSpec[] = [
   },
   {
     id: 'tesla-model-y-2026-premium-awd',
-    name: 'Model Y Premium AWD (2026)',
+    name: 'Model Y Premium AWD',
     maker: 'Tesla',
     countryCode: 'US',
     segmentId: 'suv-crossover',
@@ -214,12 +214,12 @@ export const cars: CarSpec[] = [
     quartetLetter: 'D',
     image: '/images/tesla-model-y.jpg',
     specs: {
-      rangeKm: 533,
-      consumptionKwhPer100km: 15.2,
-      powerKw: 393,
-      acceleration0to100: 4.3,
-      weightKg: 2003,
-      batteryKwh: 81,
+      rangeKm: 600,
+      consumptionKwhPer100km: 15.9,
+      powerKw: 378,
+      acceleration0to100: 4.8,
+      weightKg: 2072,
+      batteryKwh: 79,
     },
   },
 

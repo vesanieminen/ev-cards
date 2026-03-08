@@ -85,7 +85,12 @@
 
 .card.print .imageArea {
   min-height: auto;
+  height: 120px;
   padding: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card.print .carImage {
