@@ -50,6 +50,14 @@ export function Layout({ children, onExportPdf, isExporting }: LayoutProps) {
       </nav>
 
       <main className={styles.main}>{children}</main>
+
+      <footer className={styles.footer}>
+        Car images sourced from{' '}
+        <a href="https://commons.wikimedia.org" target="_blank" rel="noopener noreferrer">
+          Wikimedia Commons
+        </a>
+        , used under Creative Commons licenses.
+      </footer>
     </div>
   );
 }
