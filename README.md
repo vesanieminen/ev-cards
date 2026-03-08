@@ -2,7 +2,7 @@
 
 A web application for browsing and printing EV (Electric Vehicle) quartets playing cards. Features 32 real EV models organized into 8 quartets by segment.
 
-![EV Cards Screenshot](docs/screenshot.png)
+![EV Cards Screenshot](public/images/og-image.png)
 
 ## Getting Started
 
