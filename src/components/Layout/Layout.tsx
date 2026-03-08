@@ -26,14 +26,14 @@ export function Layout({ children, onExportPdf, isExporting }: LayoutProps) {
             className={`${styles.navLink} ${location.pathname === '/' ? styles.navLinkActive : ''}`}
           >
             <LayoutGrid size={16} />
-            All Cards
+            <span>All Cards</span>
           </Link>
           <Link
             to="/random"
             className={`${styles.navLink} ${location.pathname === '/random' ? styles.navLinkActive : ''}`}
           >
             <Shuffle size={16} />
-            Random
+            <span>Random</span>
           </Link>
         </div>
 
@@ -44,7 +44,7 @@ export function Layout({ children, onExportPdf, isExporting }: LayoutProps) {
             disabled={isExporting}
           >
             <FileDown size={16} />
-            {isExporting ? 'Exporting...' : 'Export PDF'}
+            <span>{isExporting ? 'Exporting...' : 'Export PDF'}</span>
           </button>
         )}
       </nav>
