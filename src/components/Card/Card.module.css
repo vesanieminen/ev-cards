@@ -84,7 +84,16 @@
 }
 
 .card.print .imageArea {
-  min-height: 150px;
+  min-height: auto;
+  padding: 0;
+}
+
+.card.print .carImage {
+  position: relative;
+  inset: auto;
+  width: 100%;
+  height: auto;
+  object-fit: none;
 }
 
 .card.print .silhouette {

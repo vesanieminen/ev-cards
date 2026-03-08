@@ -212,7 +212,7 @@ export const cars: CarSpec[] = [
     segmentId: 'suv-crossover',
     quartetId: '3',
     quartetLetter: 'D',
-    image: 'https://www.motortrend.com/files/6792fb96636561000870ebbf/2026teslamodelyjuniperuslaunch25.jpg',
+    image: '/images/tesla-model-y.jpg',
     specs: {
       rangeKm: 533,
       consumptionKwhPer100km: 15.2,
