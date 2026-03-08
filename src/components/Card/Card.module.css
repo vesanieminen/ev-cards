@@ -45,7 +45,7 @@
 }
 
 .card.print {
-  width: 85mm;
+  width: 92mm;
   border-radius: 12px;
   box-shadow: none;
   border: 1px solid #e2e8f0;
@@ -76,12 +76,12 @@
 }
 
 .card.print .imageArea {
-  min-height: 100px;
-  padding: 16px 12px 14px;
+  min-height: 130px;
+  padding: 20px 16px 16px;
 }
 
 .card.print .silhouette {
-  width: 140px;
+  width: 160px;
 }
 
 .card.print .brandLabel {

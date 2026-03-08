@@ -114,7 +114,7 @@ export function FilterBar({ filters, onChange, resultCount, totalCount }: Filter
 
         <div className={styles.rangeFilters}>
           <div className={styles.rangeGroup}>
-            <label className={styles.filterLabel}>Range (km)</label>
+            <label className={`${styles.filterLabel} ${styles.rangeLabel}`}>Range (km)</label>
             <div className={styles.rangeInputs}>
               <input
                 type="number"
@@ -135,7 +135,7 @@ export function FilterBar({ filters, onChange, resultCount, totalCount }: Filter
           </div>
 
           <div className={styles.rangeGroup}>
-            <label className={styles.filterLabel}>0-100 km/h (s)</label>
+            <label className={`${styles.filterLabel} ${styles.rangeLabel}`}>0–100 km/h (s)</label>
             <div className={styles.rangeInputs}>
               <input
                 type="number"
@@ -158,7 +158,7 @@ export function FilterBar({ filters, onChange, resultCount, totalCount }: Filter
           </div>
 
           <div className={styles.rangeGroup}>
-            <label className={styles.filterLabel}>Weight (kg)</label>
+            <label className={`${styles.filterLabel} ${styles.rangeLabel}`}>Weight (kg)</label>
             <div className={styles.rangeInputs}>
               <input
                 type="number"

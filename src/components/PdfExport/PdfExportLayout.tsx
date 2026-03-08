@@ -8,7 +8,7 @@ interface PdfExportLayoutProps {
   cars: CarSpec[];
 }
 
-const CARDS_PER_PAGE = 8;
+const CARDS_PER_PAGE = 4;
 
 export const PdfExportLayout = forwardRef<HTMLDivElement, PdfExportLayoutProps>(
   ({ cars }, ref) => {

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { Shuffle } from 'lucide-react';
 import { cars } from '../data/cars';
 import { getSegment } from '../data/segments';
@@ -10,15 +10,26 @@ export function RandomCardPage() {
   const { car, shuffle } = useRandomCard(cars);
   const [animating, setAnimating] = useState(false);
 
-  if (!car) return null;
-
-  const handleShuffle = () => {
+  const handleShuffle = useCallback(() => {
     setAnimating(true);
     setTimeout(() => {
       shuffle();
       setAnimating(false);
     }, 200);
-  };
+  }, [shuffle]);
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        handleShuffle();
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [handleShuffle]);
+
+  if (!car) return null;
 
   return (
     <div className={styles.page}>

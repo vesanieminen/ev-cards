@@ -76,6 +76,10 @@
   flex-shrink: 0;
 }
 
+.rangeLabel {
+  text-transform: none;
+}
+
 .chipGroup {
   display: flex;
   flex-wrap: wrap;
